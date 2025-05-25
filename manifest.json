@@ -1,0 +1,49 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Transcript Summarizer",
+    "version": "1.0",
+    "description": "Summarize YouTube video transcripts using your favorite AI tool.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+      "*://*.youtube.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/watch*"],
+        "js": ["content.js"],
+        "css": ["content.css"],
+        "run_at": "document_end",
+        "all_frames": true
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "sidebar/sidebar.html",
+          "sidebar/sidebar.js",
+          "sidebar/sidebar.css",
+          "content.css"
+        ],
+        "matches": ["*://*.youtube.com/*"]
+      }
+    ]
+  }

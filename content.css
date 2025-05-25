@@ -1,0 +1,101 @@
+.yt-summarizer-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .summarize-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .transcript-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    max-height: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: none;
+  }
+  
+  .transcript-panel.visible {
+    display: block;
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .panel-content {
+    padding: 16px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+ .yt-transcript-btn-wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Ensure buttons don't get crushed in flex containers */
+ytd-watch-metadata #actions.ytd-watch-metadata {
+  flex-wrap: wrap;
+}
+
+#summarize-btn,
+#transcript-btn {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  width: auto;
+  min-width: 120px;
+  max-width: 160px;
+  flex: 1;
+  text-align: center;
+}
+

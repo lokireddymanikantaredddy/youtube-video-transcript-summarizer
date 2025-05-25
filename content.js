@@ -1,5 +1,4 @@
-// YouTube Transcript Summarizer - Content Script
-// Complete version with reliable AI platform integration
+
 
 const CONFIG = {
   buttonContainerSelectors: [

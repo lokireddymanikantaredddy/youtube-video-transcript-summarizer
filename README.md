@@ -1,7 +1,7 @@
 # 🎬 YouTube Transcript Summarizer Launcher - Chrome Extension
 
 Enhance your YouTube experience by effortlessly summarizing video content using your preferred AI tool — ChatGPT, Gemini, or Claude — directly from YouTube.
-
+ 
 ---
 
 ## 🚀 Features

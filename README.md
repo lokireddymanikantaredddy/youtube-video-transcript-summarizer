@@ -60,7 +60,8 @@ Enhance your YouTube experience by effortlessly summarizing video content using 
 
    You can change your preferences anytime via the settings icon.
 
-
+DEMO LINK :- 
+https://youtu.be/8fhrsuhGuaI?si=wpwJoSq4q9TParol
 
 
 📦 Tech Stack
